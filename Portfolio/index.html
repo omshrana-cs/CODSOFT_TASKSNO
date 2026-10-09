@@ -3,111 +3,566 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Omsh Rana | Portfolio</title>
+    <meta name="theme-color" content="#080a08">
+    <meta name="description" content="Omsh Rana — Computer Science and Cybersecurity student building modern web experiences.">
+
+    <title>Omsh Rana | Developer Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
+
 <body>
-<header>
-    <img src="profile.jpg" alt="Omsh Rana" class="profile-photo">
 
-    <h1>Omsh Rana</h1>
-    <p>CSE (Cybersecurity) Student | Aspiring Web Developer</p>
+    <div class="page-glow page-glow-one"></div>
+    <div class="page-glow page-glow-two"></div>
 
-    <a href="https://www.linkedin.com/in/omsh-rana-7699b73a4"
-       target="_blank"
-       class="connect-btn">Let's Connect</a>
-</header>
+    <!-- NAVIGATION -->
+    <header class="site-header">
 
-<nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-</nav>
+        <a class="brand" href="#home">
+            <span class="brand-mark">O<span>R</span></span>
+            <span class="brand-name">OMSH RANA<span class="brand-dot">.</span></span>
+        </a>
 
-<main>
+        <button class="menu-toggle" aria-label="Open navigation"
+                aria-expanded="false" aria-controls="main-nav">
+            <span></span>
+            <span></span>
+        </button>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-    Hello! I'm Omsh Rana, a Computer Science and Engineering student
-    specializing in Cybersecurity. I am interested in web development,
-    programming, and cybersecurity, and I enjoy building practical
-    projects to strengthen my technical skills. I am continuously
-    learning new technologies and looking for opportunities to gain
-    real-world experience.
-</p>
-    </section>
+        <nav id="main-nav" class="main-nav">
+            <a class="nav-link active" href="#home">Home</a>
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#skills">Skills</a>
+            <a class="nav-link" href="#projects">Projects</a>
+            <a class="nav-link" href="#contact">Contact</a>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Java</li>
-            <li>Python</li>
-            <li>Cybersecurity</li>
-        </ul>
-    </section>
+            <a class="nav-cta" href="#contact">
+                LET'S TALK <span>↗</span>
+            </a>
+        </nav>
 
-    <section id="projects">
-    <h2>Projects</h2>
+    </header>
 
-    <div class="project-card">
-        <h3>Personal Portfolio</h3>
-        <p>
-            A responsive personal portfolio website built using
-            HTML, CSS and JavaScript.
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero section-wrap" id="home">
+
+            <div class="hero-copy">
+
+                <div class="eyebrow">
+                    <span class="status-dot"></span>
+                    OPEN TO LEARNING & COLLABORATION
+                </div>
+
+                <p class="hero-kicker">HELLO, WORLD! I'M</p>
+
+                <h1>
+                    OMSH<br>
+                    <span class="name-outline">RANA</span><span class="hero-period">.</span>
+                </h1>
+
+                <div class="hero-role">
+                    <span class="role-line"></span>
+                    CSE (CYBERSECURITY) STUDENT
+                </div>
+
+                <p class="hero-description">
+                    I'm learning to build
+                    <strong>useful, secure and beautiful</strong>
+                    digital experiences — one project at a time.
+                </p>
+
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#projects">
+                        EXPLORE MY WORK <span>↘</span>
+                    </a>
+
+                    <a class="button button-quiet" href="#contact">
+                        LET'S CONNECT <span>↗</span>
+                    </a>
+                </div>
+
+                <div class="hero-footnote">
+                    <span class="mono">BASED IN INDIA</span>
+                    <span class="footnote-divider"></span>
+                    <span class="mono">BUILDING MY NEXT CHAPTER</span>
+                </div>
+
+            </div>
+
+            <!-- DECORATIVE HERO VISUAL -->
+            <div class="hero-visual">
+
+                <div class="visual-frame">
+
+                    <div class="frame-top">
+                        <span>PORTFOLIO / 2026</span>
+                        <span class="frame-live"><i></i> LIVE PREVIEW</span>
+                    </div>
+
+                    <div class="visual-orbit orbit-one"></div>
+                    <div class="visual-orbit orbit-two"></div>
+
+                    <div class="visual-core">
+    <img src="profile.jpg" alt="Omsh Rana"
+         class="profile-photo">
+</div>
+
+                    <div class="visual-label label-top">
+                        <span class="label-index">01</span>
+                        <span>CODE WITH<br>INTENTION</span>
+                    </div>
+
+                    <div class="visual-label label-bottom">
+                        <span class="label-index">02</span>
+                        <span>LEARN. BUILD.<br>LEVEL UP.</span>
+                    </div>
+
+                    <div class="visual-cross cross-one">+</div>
+                    <div class="visual-cross cross-two">+</div>
+
+                    <div class="frame-bottom">
+                        <span>CREATIVITY × LOGIC</span>
+                        <span>EST. 2025</span>
+                    </div>
+
+                </div>
+
+                <div class="floating-chip chip-top">
+                    <span class="chip-icon">⌘</span>
+                    <span>
+                        <small>FOCUS</small>
+                        <strong>Web Development</strong>
+                    </span>
+                </div>
+
+                <div class="floating-chip chip-bottom">
+                    <span class="chip-icon shield">◇</span>
+                    <span>
+                        <small>INTEREST</small>
+                        <strong>Cybersecurity</strong>
+                    </span>
+                </div>
+
+            </div>
+
+            <a class="scroll-cue" href="#about">
+                <span class="scroll-wheel"></span>
+                SCROLL TO EXPLORE
+            </a>
+
+        </section>
+
+        <!-- MOVING TEXT STRIP -->
+        <section class="intro-strip">
+            <div class="strip-inner">
+                <span>CURIOUS BY NATURE</span><b>✳</b>
+                <span>BUILT THROUGH PRACTICE</span><b>✳</b>
+                <span>ALWAYS LEARNING</span><b>✳</b>
+                <span>SECURITY MINDED</span><b>✳</b>
+                <span>CURIOUS BY NATURE</span><b>✳</b>
+                <span>BUILT THROUGH PRACTICE</span><b>✳</b>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section class="content-section section-wrap" id="about">
+
+            <div class="section-heading">
+                <div>
+                    <p class="section-index">01 / A LITTLE ABOUT ME</p>
+                    <h2>Curiosity into<br><span class="muted-heading">creation.</span></h2>
+                </div>
+
+                <p class="section-aside">
+                    I'm at the beginning of my developer journey —
+                    and that's where the fun starts.
+                </p>
+            </div>
+
+            <div class="about-grid">
+
+                <div class="about-card about-main-card">
+                    <div class="card-symbol">✳</div>
+
+                    <p class="card-overline">THE PERSON BEHIND THE SCREEN</p>
+
+                    <h3>Hey, I'm Omsh.</h3>
+
+                    <p>
+                        I'm a B.Tech Computer Science student specializing
+                        in Cybersecurity at ITER. I enjoy exploring how
+                        websites work, solving problems through code, and
+                        learning how to make digital experiences engaging
+                        and dependable.
+                    </p>
+
+                    <p>
+                        Right now, I'm focused on strengthening my web
+                        development foundations, practicing Java and DSA,
+                        and turning what I learn into projects I can share.
+                    </p>
+
+                    <div class="about-signature">
+                        STAY CURIOUS<span>.</span>
+                    </div>
+                </div>
+
+                <div class="about-side">
+
+                    <div class="mini-card">
+                        <span class="mini-number">01</span>
+                        <div>
+                            <p class="card-overline">CURRENTLY LEARNING</p>
+                            <h3>Frontend Development</h3>
+                            <p>HTML · CSS · JavaScript</p>
+                        </div>
+                        <span class="mini-arrow">↗</span>
+                    </div>
+
+                    <div class="mini-card">
+                        <span class="mini-number">02</span>
+                        <div>
+                            <p class="card-overline">BUILDING FOUNDATIONS</p>
+                            <h3>Java & Problem Solving</h3>
+                            <p>Core concepts · DSA practice</p>
+                        </div>
+                        <span class="mini-arrow">↗</span>
+                    </div>
+
+                    <div class="mini-card">
+                        <span class="mini-number">03</span>
+                        <div>
+                            <p class="card-overline">EXPLORING</p>
+                            <h3>Cybersecurity</h3>
+                            <p>Learning secure computing basics</p>
+                        </div>
+                        <span class="mini-arrow">↗</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section class="content-section section-wrap skills-section" id="skills">
+
+            <div class="section-heading">
+                <div>
+                    <p class="section-index">02 / MY TOOLKIT</p>
+                    <h2>Learning the<br><span class="muted-heading">craft.</span></h2>
+                </div>
+
+                <p class="section-aside">
+                    A growing toolkit. Every new concept is another
+                    opportunity to build something better.
+                </p>
+            </div>
+
+            <div class="skills-grid">
+
+                <article class="skill-card">
+                    <span class="skill-number">01</span>
+                    <div class="skill-icon">&lt;/&gt;</div>
+                    <h3>Web Foundations</h3>
+                    <p>Creating the structure and style of responsive web pages.</p>
+                    <div class="skill-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                </article>
+
+                <article class="skill-card">
+                    <span class="skill-number">02</span>
+                    <div class="skill-icon">J.</div>
+                    <h3>Programming</h3>
+                    <p>Building programming fundamentals and learning to solve problems.</p>
+                    <div class="skill-tags">
+                        <span>Java</span>
+                        <span>DSA</span>
+                        <span>Logic</span>
+                    </div>
+                </article>
+
+                <article class="skill-card">
+                    <span class="skill-number">03</span>
+                    <div class="skill-icon">⌘</div>
+                    <h3>Tools & Workflow</h3>
+                    <p>Practicing a consistent workflow for writing, testing and sharing code.</p>
+                    <div class="skill-tags">
+                        <span>VS Code</span>
+                        <span>GitHub</span>
+                        <span>DevTools</span>
+                    </div>
+                </article>
+
+                <article class="skill-card">
+                    <span class="skill-number">04</span>
+                    <div class="skill-icon">◇</div>
+                    <h3>Security Mindset</h3>
+                    <p>Exploring cybersecurity concepts through responsible learning.</p>
+                    <div class="skill-tags">
+                        <span>Cybersecurity</span>
+                        <span>Web Basics</span>
+                    </div>
+                </article>
+
+            </div>
+
+            <p class="skills-note">
+                <span>↗</span>
+                This toolkit is a work in progress — I'm focused on learning by building.
+            </p>
+
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section class="content-section section-wrap projects-section" id="projects">
+
+            <div class="section-heading">
+                <div>
+                    <p class="section-index">03 / SELECTED WORK</p>
+                    <h2>Made while<br><span class="muted-heading">learning.</span></h2>
+                </div>
+
+                <p class="section-aside">
+                    Small projects, real practice. Each one helps me
+                    learn a new part of the process.
+                </p>
+            </div>
+
+            <div class="projects-grid">
+
+                <!-- PROJECT 1 -->
+                <article class="project-card project-featured">
+
+                    <div class="project-preview solespace-preview">
+
+                        <div class="preview-top">
+                            <span class="preview-brand">sole<span>space</span></span>
+                            <span class="preview-menu">☰</span>
+                        </div>
+
+                        <div class="preview-copy">
+                            <span>MOVE DIFFERENT.</span>
+                            <strong>FIND YOUR<br>PACE<span>.</span></strong>
+                            <small>THE EVERYDAY COLLECTION</small>
+                        </div>
+
+                        <div class="preview-shoe shoe-one">◒</div>
+
+                        <div class="preview-badge">01 / STORE CONCEPT</div>
+
+                    </div>
+
+                    <div class="project-info">
+
+                        <div>
+                            <p class="project-type">FRONTEND · E-COMMERCE CONCEPT</p>
+                            <h3>SoleSpace — Sneaker Store</h3>
+                        </div>
+
+                        <span class="project-arrow">↗</span>
+
+                        <p>
+                            A modern sneaker storefront concept featuring
+                            product browsing, category filters, search,
+                            a demo cart and voucher interactions.
+                        </p>
+
+                        <div class="project-stack">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://github.com/omshrana-cs/CODSOFT_TASKSNO"
+                               target="_blank" rel="noreferrer">
+                                VIEW REPOSITORY ↗
+                            </a>
+                            <span>FRONTEND DEMO</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <!-- PROJECT 2 -->
+                <article class="project-card">
+
+                    <div class="project-preview portfolio-preview">
+                        <span class="preview-code-line">01 &nbsp; &lt;html&gt;</span>
+                        <span class="preview-code-line">02 &nbsp; &nbsp; &lt;body&gt;</span>
+
+                        <div class="portfolio-preview-center">
+                            <span>OR<span class="green-dot">.</span></span>
+                            <small>PERSONAL PORTFOLIO</small>
+                        </div>
+
+                        <span class="preview-code-line">03 &nbsp; &nbsp; &lt;/body&gt;</span>
+                        <span class="preview-code-line">04 &nbsp; &lt;/html&gt;</span>
+
+                        <div class="preview-badge">02 / THIS WEBSITE</div>
+                    </div>
+
+                    <div class="project-info">
+
+                        <div>
+                            <p class="project-type">PERSONAL BRAND · WEB DESIGN</p>
+                            <h3>Developer Portfolio</h3>
+                        </div>
+
+                        <span class="project-arrow">↗</span>
+
+                        <p>
+                            A personal space to share my learning journey,
+                            skills and web projects.
+                        </p>
+
+                        <div class="project-stack">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://github.com/omshrana-cs/CODSOFT_TASKSNO"
+                               target="_blank" rel="noreferrer">
+                                VIEW REPOSITORY ↗
+                            </a>
+                            <span>IN PROGRESS</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <!-- PROJECT 3 -->
+                <article class="project-card project-upcoming">
+
+                    <div class="upcoming-art">
+                        <span class="calc-symbol">±</span>
+                        <span class="upcoming-label">NEXT UP / 03</span>
+                        <span class="upcoming-grid"></span>
+                    </div>
+
+                    <div class="project-info">
+
+                        <div>
+                            <p class="project-type">JAVASCRIPT · INTERACTIVE UI</p>
+                            <h3>Interactive Calculator</h3>
+                        </div>
+
+                        <span class="project-arrow">↗</span>
+
+                        <p>
+                            A calculator project for practicing JavaScript
+                            events, input handling and calculations.
+                        </p>
+
+                        <div class="project-stack">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+
+                        <div class="project-links">
+                            <span class="coming-soon">COMING SOON</span>
+                            <span>PLANNED</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+            <p class="projects-disclaimer">
+                Project details reflect learning/demo work. Features and links may change as projects develop.
+            </p>
+
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section class="contact-section section-wrap" id="contact">
+
+            <div class="contact-panel">
+
+                <div class="contact-decoration">↗</div>
+
+                <p class="section-index">04 / HAVE SOMETHING IN MIND?</p>
+
+                <h2>
+                    Let's make<br>
+                    <span>something useful.</span>
+                </h2>
+
+                <p class="contact-description">
+                    I'm always glad to connect with people who enjoy
+                    building, learning and sharing ideas.
+                </p>
+
+                <div class="contact-actions">
+
+                    <a class="button button-primary"
+                       href="mailto:omshrana806@gmail.com">
+                        EMAIL ME <span>↗</span>
+                    </a>
+
+                    <a class="button button-quiet"
+                       href="https://www.linkedin.com/in/omsh-rana-7699b73a4"
+                       target="_blank" rel="noreferrer">
+                        LINKEDIN <span>↗</span>
+                    </a>
+
+                    <a class="button button-quiet"
+                       href="https://github.com/omshrana-cs"
+                       target="_blank" rel="noreferrer">
+                        GITHUB <span>↗</span>
+                    </a>
+
+                </div>
+
+                <p class="contact-small">
+                    NO PRESSURE. JUST A GOOD CONVERSATION.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer section-wrap">
+
+        <a class="footer-brand" href="#home">OR<span>.</span></a>
+
+        <p>Designed with curiosity. Built with code.</p>
+
+        <p class="footer-copy">
+            © <span id="year">2026</span> OMSH RANA
         </p>
-    </div>
 
-    <div class="project-card">
-        <h3>Landing Page</h3>
-        <p>
-            A modern landing page designed using HTML and CSS.
-        </p>
-    </div>
+        <a class="back-top" href="#home">BACK TO TOP ↑</a>
 
-    <div class="project-card">
-        <h3>Calculator</h3>
-        <p>
-            A functional calculator created using HTML, CSS and JavaScript.
-        </p>
-    </div>
-    </section>
-    <section id="contact">
-    <h2>Contact</h2>
+    </footer>
 
-    <p>
-        Phone:
-        <a href="tel:7501775793">7501775793</a>
-    </p>
-
-    <p>
-        Email:
-        <a href="mailto:omshrana806@gmail.com">omshrana806@gmail.com</a>
-    </p>
-
-    <p>
-        LinkedIn:
-        <a href="https://www.linkedin.com/in/omsh-rana-7699b73a4" target="_blank">Connect with me</a>
-    </p>
-
-    <p>
-        GitHub:
-        <a href="https://github.com/omshrana-cs" target="_blank">View my GitHub</a>
-    </p>
-</section>
-
-</main>
-
-<footer>
-    <p>&copy; 2026 Omsh Rana. All rights reserved.</p>
-</footer>
-<script src="script.js"></script>
 </body>
 </html>
+
+
 
 
 
