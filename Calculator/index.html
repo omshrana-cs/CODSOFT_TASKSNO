@@ -1,1 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator | Omsh Rana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="topbar">
+        <div class="brand">OR<span>.</span> STUDIO</div>
+        <div class="tag">CODSOFT · TASK 03</div>
+    </header>
+
+    <main class="calculator">
+
+        <div class="heading">
+            <h1>Calculator<span class="green">.</span></h1>
+            <p>Simple tools. Precise results.</p>
+        </div>
+
+        <section class="display" aria-label="Calculator display" aria-live="polite">
+            <div class="expression" id="expression">Ready when you are</div>
+            <div class="result" id="result">0</div>
+        </section>
+
+        <div class="keys" id="keys">
+            <button class="utility" data-action="clear" aria-label="Clear all">AC</button>
+            <button class="utility" data-action="sign" aria-label="Change sign">+/−</button>
+            <button class="utility" data-action="percent" aria-label="Percentage">%</button>
+            <button class="operator" data-operator="/" aria-label="Divide">÷</button>
+
+            <button data-digit="7">7</button>
+            <button data-digit="8">8</button>
+            <button data-digit="9">9</button>
+            <button class="operator" data-operator="*" aria-label="Multiply">×</button>
+
+            <button data-digit="4">4</button>
+            <button data-digit="5">5</button>
+            <button data-digit="6">6</button>
+            <button class="operator" data-operator="-" aria-label="Subtract">−</button>
+
+            <button data-digit="1">1</button>
+            <button data-digit="2">2</button>
+            <button data-digit="3">3</button>
+            <button class="operator" data-operator="+" aria-label="Add">+</button>
+
+            <button class="utility" data-action="backspace" aria-label="Backspace">⌫</button>
+            <button class="zero" data-digit="0">0</button>
+            <button data-action="decimal" aria-label="Decimal point">.</button>
+            <button class="equals" data-action="equals" aria-label="Equals">=</button>
+        </div>
+
+        <p class="history-note">Designed for everyday calculations</p>
+
+    </main>
+
+    <footer>
+        Built with focus by <strong>Omsh Rana</strong>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
 
