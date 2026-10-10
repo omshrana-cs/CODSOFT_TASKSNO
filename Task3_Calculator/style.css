@@ -1,1 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --bg: #080a08;
+    --panel: #111411;
+    --button: #1a1e19;
+    --green: #c6ff4d;
+    --text: #f4f6ef;
+    --muted: #858b80;
+    --border: #282e25;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 28px 16px;
+
+    background:
+        radial-gradient(ellipse at top, #1b2613 0%, transparent 48%),
+        var(--bg);
+
+    color: var(--text);
+    font-family: 'Manrope', sans-serif;
+}
+
+.topbar {
+    width: min(100%, 370px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.brand {
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.brand span,
+.green {
+    color: var(--green);
+}
+
+.tag {
+    font-size: 10px;
+    color: var(--green);
+    border: 1px solid #354526;
+    border-radius: 30px;
+    padding: 6px 10px;
+    letter-spacing: 1px;
+}
+
+.calculator {
+    width: min(100%, 370px);
+    padding: 22px;
+    background: rgba(17, 20, 17, 0.96);
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    box-shadow: 0 24px 80px #0008;
+}
+
+.heading {
+    margin-bottom: 20px;
+}
+
+.heading h1 {
+    font-size: 23px;
+    letter-spacing: -1px;
+}
+
+.heading p {
+    color: var(--muted);
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.display {
+    background: #0a0c0a;
+    border: 1px solid #22281f;
+    border-radius: 15px;
+    padding: 18px 15px;
+    margin-bottom: 17px;
+    text-align: right;
+    min-height: 112px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    overflow: hidden;
+}
+
+.expression {
+    color: var(--muted);
+    font-family: 'DM Mono', monospace;
+    font-size: 13px;
+    min-height: 18px;
+    overflow-wrap: anywhere;
+}
+
+.result {
+    font-family: 'DM Mono', monospace;
+    font-size: clamp(28px, 8vw, 38px);
+    font-weight: 500;
+    letter-spacing: -1px;
+    overflow-wrap: anywhere;
+}
+
+.keys {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 10px;
+}
+
+button {
+    min-width: 0;
+    height: 57px;
+    border: 1px solid transparent;
+    border-radius: 13px;
+
+    background: var(--button);
+    color: var(--text);
+
+    font-family: 'Manrope', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background 0.18s,
+        transform 0.18s,
+        border-color 0.18s;
+
+    -webkit-tap-highlight-color: transparent;
+}
+
+button:focus-visible {
+    outline: 2px solid var(--green);
+    outline-offset: 2px;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.utility {
+    color: #d0d7c8;
+    background: #252a23;
+}
+
+.operator {
+    color: var(--green);
+    border-color: #303b25;
+    background: #20291a;
+    font-size: 22px;
+}
+
+.equals {
+    background: var(--green);
+    color: #11150b;
+    font-size: 23px;
+}
+
+.zero {
+    grid-column: span 2;
+}
+
+.history-note {
+    text-align: center;
+    color: var(--muted);
+    font-size: 10px;
+    margin-top: 18px;
+}
+
+footer {
+    margin-top: 22px;
+    text-align: center;
+    font-size: 11px;
+    color: var(--muted);
+}
+
+footer strong {
+    color: var(--green);
+    font-weight: 600;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    button:hover {
+        background: #293024;
+        border-color: #414a38;
+    }
+
+    button.operator:hover {
+        background: #2c3920;
+    }
+
+    button.equals:hover {
+        background: #d6ff80;
+    }
+}
+
+@media (max-width: 360px) {
+    .calculator {
+        padding: 16px;
+    }
+
+    .keys {
+        gap: 7px;
+    }
+
+    button {
+        height: 52px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        transition: none !important;
+    }
+}
 
